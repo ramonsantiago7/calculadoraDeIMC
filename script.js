@@ -19,7 +19,7 @@ function calcular_IMC(){
     }else if(imc < 39.9){
         classificacao = "obesidade grau II"
     }else{
-        classificacao = "voce é uma bola!"
+        classificacao = "obesidade grau III!"
     }
 
     document.querySelector("#resultado").innerHTML = `IMC: ${imc} - ${classificacao}`
