@@ -74,6 +74,13 @@ button:active{
     font-weight: 700;
 }
 
+footer{
+    font-size: 12px;
+    color: #c4c3c3;
+    text-align: center;
+
+}
+
 @media screen and (max-width: 457px) {
     .IMC{
         width: 70%; 
