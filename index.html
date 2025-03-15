@@ -12,18 +12,21 @@
 
     <h1>Calculadora de IMC</h1>
     
-    <div class="IMC">
+    <form class="IMC">
         <label for="">Peso</label>
-        <input type="number" name="" id="peso" placeholder="KG">
+        <input type="number" name="" id="peso" placeholder="Exemplo: 70.50" required min="0">
+        <div class="aviso_peso alerta"></div>
+
         <label for="">Altura</label>
-        
-        <input type="number" name="" id="altura" placeholder="CM">
-        <button type="submit" onclick="calcular_IMC()">Calcular</button> 
-        <p id="resultado"></p>
+        <input type="text" name="" id="altura" placeholder="Exemplo: 1.80" required>
+        <div class="aviso_altura alerta"></div>
+        <button type="submit" onclick="calcular_IMC(event)">Calcular</button> 
+        <div id="resultado"></div>
+        <div id="aviso" class="alerta"></div>
         <footer>
             Desenvolvido por Ramon Santiago © <br> os direitos reservados.
         </footer>
-    </div>
+    </form>
 
 </div>
 
