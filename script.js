@@ -42,20 +42,26 @@ function calcular_IMC(event){
 
 function classificacao_IMC(imc){
      let classificacao = ""
-
+    const resultado = document.querySelector("#resultado")
      
         if (imc < 18.5){
             classificacao = "abaixo do peso"
+            resultado.style.color = "#0abdc7"
         }else if(imc < 24.9){
-            classificacao = "peso normal"        
+            classificacao = "peso normal"
+            resultado.style.color = "#00ed14"        
         }else if(imc < 29.9){
             classificacao = "sobrepeso"
+            resultado.style.color = "#d8db30"
         }else if(imc < 34.9){
             classificacao = "obesidade grau I"
+            resultado.style.color = "#ffa600"
         }else if(imc < 39.9){
             classificacao = "obesidade grau II"
+            resultado.style.color = "#db1600"
         }else{
             classificacao = "obesidade grau III!"
+            resultado.style.color = "#8400db"
         }
         document.querySelector("#resultado").innerHTML = `IMC: ${imc} - ${classificacao}`
         document.querySelector("#aviso").innerText = ""
